@@ -1,4 +1,3 @@
-const webpack = require('webpack');
 const SystemModulePlugin = require('@saasfe/saas-webpack-system-module');
 
 module.exports = {
@@ -18,11 +17,6 @@ module.exports = {
       <script src="https://gw.alipayobjects.com/os/lib/moment/2.24.0/min/moment.min.js" crossorigin="anonymous"></script>
       <script src="https://gw.alipayobjects.com/os/lib/moment/2.24.0/locale/zh-cn.js" crossorigin="anonymous"></script>
       <script src="https://gw.alipayobjects.com/os/lib/antd/3.25.2/dist/antd-with-locales.min.js" crossorigin="anonymous"></script>
-      `,
-      `
-      <script>
-      window.MICRO_APPNAME = '';
-      </script>
       `,
       `
       <style>
@@ -139,7 +133,7 @@ module.exports = {
   // 组件发布前编译配置
   compile: {
     cdn: true, // 是否需要将编译结果发布到CDN
-    filename: 'choice-we-app-loader', // 模块打包后的文件名前缀（需要自定义！！！）
+    filename: 'index', // 模块打包后的文件名前缀（需要自定义！！！）
     library: 'MicroAppLoader', // 模块名字（需要自定义！！！）
     config: (compileConfig) => {
       // console.log(JSON.stringify(compileConfig));
@@ -153,10 +147,8 @@ module.exports = {
           ],
         },
         plugins: [
+          ...compileConfig.plugins,
           new SystemModulePlugin(),
-          new webpack.DefinePlugin({
-            'MICRO_APPNAME': JSON.stringify(''),
-          }),
         ],
         devtool: 'cheap-source-map',
       };

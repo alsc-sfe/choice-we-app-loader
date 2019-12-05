@@ -10,6 +10,7 @@ import createLoading from './loading';
 declare global {
   interface Window {
     MicroAppLoader: any;
+    System: any;
   }
 }
 

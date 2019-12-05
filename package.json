@@ -55,8 +55,7 @@
     "rimraf": "2",
     "stylelint": "7",
     "stylelint-config-standard": "16",
-    "typescript": "3",
-    "webpack": "^4.41.2"
+    "typescript": "3"
   },
   "peerDependencies": {
     "classnames": ">=2.0.0",
