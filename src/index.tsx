@@ -66,8 +66,7 @@ const defaultConfig = {
             <ConfigProvider locale={locales.zh_CN}>
               <Router
                 microAppName={microAppConfig.microAppName}
-                basename={loaderConfig.basename}
-                routerType={loaderConfig.routerType}>
+                {...loaderConfig.router}>
                 <Route
                   route={route as TRoute}
                   routeIgnore={routeIgnore as TRoute}

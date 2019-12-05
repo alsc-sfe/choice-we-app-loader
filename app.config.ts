@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const SystemModulePlugin = require('@ali/saas-webpack-system-module');
+const SystemModulePlugin = require('@saasfe/saas-webpack-system-module');
 
 module.exports = {
   // 模板类型 pc | h5

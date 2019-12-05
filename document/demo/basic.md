@@ -6,7 +6,9 @@ title: demo1
 PC模板
 
 ````jsx
-import MicroAppLoader from "@alife/choice-we-app-loader";
+import MicroAppLoader from "@saasfe/choice-we-app-loader";
+
+MicroAppLoader.routerType = MicroAppLoader.RouterType.hash;
 
 MicroAppLoader.start({
   router: {
