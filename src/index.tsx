@@ -100,7 +100,7 @@ const defaultConfig = {
 } as LoaderConfig;
 
 const MicroAppLoader = microAppLoaderCreator(defaultConfig);
-MicroAppLoader.version = '1.1.2';
+MicroAppLoader.version = '1.1.4';
 
 export default MicroAppLoader;
 
