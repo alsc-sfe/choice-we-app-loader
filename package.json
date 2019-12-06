@@ -1,6 +1,6 @@
 {
-  "name": "@saasfe/choice-we-app-loader",
-  "version": "1.1.5",
+  "name": "@alife/choice-we-app-loader",
+  "version": "1.1.8",
   "description": "Choice We App Loader",
   "homepage": "https://github.com/alsc-sfe/choice-we-app-loader",
   "author": "zetay",
@@ -73,6 +73,6 @@
     "lint"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.com"
+    "registry": "https://registry.npm.alibaba-inc.com"
   }
 }
