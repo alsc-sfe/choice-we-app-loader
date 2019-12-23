@@ -70,6 +70,7 @@ const defaultConfig = {
                 <Route
                   route={route as TRoute}
                   routeIgnore={routeIgnore as TRoute}
+                  microAppName={microAppConfig.microAppName}
                 >
                   <ChoiceLayout {...layout} emptyLayout={!layout}>
                     <App />

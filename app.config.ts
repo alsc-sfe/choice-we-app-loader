@@ -133,7 +133,7 @@ module.exports = {
   // 组件发布前编译配置
   compile: {
     cdn: true, // 是否需要将编译结果发布到CDN
-    filename: 'index', // 模块打包后的文件名前缀（需要自定义！！！）
+    filename: 'choice-we-app-loader', // 模块打包后的文件名前缀（需要自定义！！！）
     library: 'MicroAppLoader', // 模块名字（需要自定义！！！）
     config: (compileConfig) => {
       // console.log(JSON.stringify(compileConfig));

@@ -1,6 +1,6 @@
 {
   "name": "@alife/choice-we-app-loader",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "description": "Choice We App Loader",
   "homepage": "https://github.com/alsc-sfe/choice-we-app-loader",
   "author": "zetay",
@@ -55,7 +55,8 @@
     "rimraf": "2",
     "stylelint": "7",
     "stylelint-config-standard": "16",
-    "typescript": "3"
+    "typescript": "3",
+    "webpack": "^4.41.4"
   },
   "peerDependencies": {
     "classnames": ">=2.0.0",
